@@ -139,8 +139,8 @@ body {
 .hero {
   background: linear-gradient(180deg, rgba(0,102,51,0.35) 0%, rgba(0,102,51,0.75) 100%), url('/images/Online-Library-Resources.png') center/cover no-repeat;
   color: #fff;
-  padding: 120px 0 100px 0;
-  min-height: 480px;
+  padding: 100px 0 80px 0;
+  min-height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,8 +183,13 @@ body {
 /* Knimbus */
 .secondary-fullwidth { padding: 0; }
 .secondary-background {
-  background: #ffffff;
-  padding: 96px 0 80px 0;
+  background: #f6f6f6;
+  padding: 72px 0 64px 0;
+}
+
+/* Knimbus section specific lighter background */
+.secondary-fullwidth:has(#knimbus-title) .secondary-background {
+  background: #f8f9fa;
 }
 .section-title {
   color: var(--green);
@@ -202,7 +207,7 @@ body {
   color: #222;
   font-size: 1.15rem;
   line-height: 1.7;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* About section - center aligned with wide margin */
@@ -269,7 +274,7 @@ body {
 @media (max-width: 1024px) {
   .hero-title { font-size: 4rem; }
   .hero { padding: 96px 0 72px; min-height: 380px; }
-  .secondary-background { padding: 80px 0 64px; }
+  .secondary-background { padding: 64px 0 48px; }
   .secondary-grid { gap: 40px; }
   .secondary-image { width: 320px; }
 }
@@ -277,7 +282,7 @@ body {
 @media (max-width: 768px) {
   .hero-title { font-size: 3.2rem; text-align: center; }
   .hero { padding: 80px 0 60px; min-height: 320px; }
-  .secondary-background { padding: 64px 0 48px; }
+  .secondary-background { padding: 56px 0 40px; }
   .section-title { font-size: 2rem; text-align: center; }
   .secondary-grid {
     gap: 32px;
