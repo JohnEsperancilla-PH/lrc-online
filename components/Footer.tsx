@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="site-footer" role="contentinfo">
       <div className="container footer-inner">
         <div className="footer-left">
-          <h3>LEARNING RESOURCE CENTER</h3>
+          <h3>LEARNING<br /> RESOURCE<br /> CENTER<br /></h3>
         </div>
         <div className="footer-links">
           <div>

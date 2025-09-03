@@ -404,6 +404,132 @@ header {
   margin: 12px 0;
 }
 
+/* =========================
+   ABOUT: OFFICE HOURS & STAFF
+========================= */
+.office-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 520px));
+  gap: 24px;
+  justify-content: center;
+}
+/* Center the last card when there's an odd number of items (desktop only) */
+@media (min-width: 769px) {
+  .office-grid > .office-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 520px;
+  }
+}
+.office-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.office-image {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.office-body {
+  padding: 18px 18px 18px 18px;
+  text-align: center;
+}
+.office-body h3 {
+  font-family: 'Indivisa Display Sans', system-ui, sans-serif;
+  font-weight: 900;
+  color: var(--green);
+  margin: 6px 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+  font-size: 1.80rem;
+}
+.office-hours {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: #333;
+  display: grid;
+  row-gap: 6px;
+}
+.office-hours li {
+  padding: 2px 0;
+  margin: 0 auto;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 0;
+  width: auto;
+}
+.office-hours li.label {
+  background: #f1f1f1;
+  color: #666;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  width: 80%;
+  padding: 8px 12px;
+}
+.office-hours li.value {
+  background: transparent;
+  color: #111;
+  font-weight: 600;
+}
+.office-note {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #ffd7d7;
+  color: #a40000;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.personnel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+.person-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  background: #e9ecef;
+}
+.person-meta {
+  display: flex;
+  flex-direction: column;
+}
+.person-meta strong {
+  font-weight: 800;
+}
+.person-meta span {
+  font-size: 13px;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .personnel-grid { grid-template-columns: repeat(3, minmax(0,1fr)); }
+}
+@media (max-width: 768px) {
+  .office-grid { grid-template-columns: 1fr; justify-content: stretch; }
+  .personnel-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+@media (max-width: 640px) {
+  .personnel-grid { grid-template-columns: 1fr; }
+}
 .handbooks-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
