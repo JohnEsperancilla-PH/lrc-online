@@ -9,8 +9,8 @@ export default function Footer() {
           <div>
             <h4>QUICK LINKS</h4>
             <ul>
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#about" className="hover:underline">About</a></li>
+              <li><a href="/" className="hover:underline">Home</a></li>
+              <li><a href="/about" className="hover:underline">About</a></li>
               <li><a href="#news" className="hover:underline">News</a></li>
               <li><a href="#facilities" className="hover:underline">Facilities</a></li>
             </ul>
