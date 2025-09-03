@@ -1,89 +1,9 @@
+
 @import "tailwindcss";
 
-/* Basic mobile menu styles */
-.mobile-menu {
-  display: none;
-}
-
-.mobile-menu.show {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .mobile-menu.show {
-    display: block;
-  }
-}
-
-/* Basic header styles */
-header {
-  background-color: #006633;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Header layout */
-.header-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.header-flex {
-  display: flex;
-  height: 64px;
-  align-items: center;
-  gap: 12px;
-}
-
-@media (min-width: 768px) {
-  .header-flex {
-    height: 80px;
-  }
-  .header-container {
-    padding: 0 24px;
-  }
-}
-
-/* Desktop navigation */
-.desktop-nav {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .desktop-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin-left: auto;
-  }
-}
-
-/* Mobile button */
-.mobile-button {
-  margin-left: auto;
-}
-
-@media (min-width: 768px) {
-  .mobile-button {
-    display: none;
-  }
-}
-
-/* Indivisa fonts */
+/* =========================
+   FONT FACES
+========================= */
 @font-face {
   font-family: 'Indivisa Display Sans';
   src: url('/fonts/woff2/indivisa_display_sans-heavy.woff2') format('woff2');
@@ -113,6 +33,9 @@ a {
   font-display: swap;
 }
 
+/* =========================
+   ROOT VARIABLES & BASE
+========================= */
 :root {
   --green: #006633;
   --green-accent: #016532;
@@ -129,13 +52,83 @@ body {
   line-height: 1.6;
 }
 
-/* Utility container for sections */
-.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+a {
+  text-decoration: none;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
 
-/* Header logo tweak (ensure white logo) */
-.brand-logo-img { filter: brightness(0) invert(1); }
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+  background-color: var(--green);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-flex {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  gap: 12px;
+}
+.desktop-nav {
+  display: none;
+}
+.mobile-button {
+  margin-left: auto;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu.show {
+  display: block;
+}
 
-/* Hero styles */
+@media (min-width: 768px) {
+  .header-flex {
+    height: 80px;
+  }
+  .header-container {
+    padding: 0 24px;
+  }
+  .desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+  }
+  .mobile-button {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-menu.show {
+    display: block;
+  }
+}
+
+/* =========================
+   LOGO
+========================= */
+.brand-logo-img {
+  filter: brightness(0) invert(1);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 .hero {
   background: linear-gradient(180deg, rgba(0,102,51,0.35) 0%, rgba(0,102,51,0.75) 100%), url('/images/Online-Library-Resources.png') center/cover no-repeat;
   color: #fff;
@@ -145,7 +138,11 @@ body {
   align-items: center;
   justify-content: center;
 }
-.hero-inner { text-align: center; width: 100%; max-width: 820px; }
+.hero-inner {
+  text-align: center;
+  width: 100%;
+  max-width: 820px;
+}
 .hero-title {
   font-family: 'Indivisa Display Sans', system-ui, sans-serif;
   font-weight: 900;
@@ -156,9 +153,16 @@ body {
   text-shadow: 0 8px 32px rgba(0,0,0,0.18);
   margin-bottom: 24px;
 }
-.hero-sub { font-size: 1.5rem; letter-spacing: 0.13em; font-weight: 700; text-shadow: 0 2px 12px rgba(0,0,0,0.18); }
+.hero-sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.13em;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
 
-/* About - Now uses same structure as Knimbus */
+/* =========================
+   BUTTONS
+========================= */
 .btn {
   background: var(--green);
   color: #fff;
@@ -178,16 +182,30 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0,102,51,0.3);
 }
-.btn.small { padding: 12px 24px; font-size: 0.95rem; }
+.btn.small {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+}
 
-/* Knimbus */
-.secondary-fullwidth { padding: 0; }
+/* =========================
+   LAYOUT UTILITIES
+========================= */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   SECTIONS (Knimbus, About, Calendar)
+========================= */
+.secondary-fullwidth {
+  padding: 0;
+}
 .secondary-background {
   background: #f6f6f6;
   padding: 72px 0 64px 0;
 }
-
-/* Knimbus section specific lighter background */
 .secondary-fullwidth:has(#knimbus-title) .secondary-background {
   background: #f8f9fa;
 }
@@ -200,8 +218,20 @@ body {
   text-transform: uppercase;
   font-family: 'Indivisa Display Sans', system-ui, sans-serif;
 }
-.secondary-grid { display: flex; gap: 48px; align-items: center; justify-content: center; flex-wrap: wrap; }
-.secondary-image { width: 480px; height: auto; border: 8px solid #fff; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+.secondary-grid {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.secondary-image {
+  width: 480px;
+  height: auto;
+  border: 8px solid #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+}
 .secondary-text {
   max-width: 520px;
   color: #222;
@@ -209,38 +239,40 @@ body {
   line-height: 1.7;
   margin-bottom: 20px;
 }
-
-/* About section - center aligned with wide margin */
 .about-text {
   max-width: 840px !important;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* Knimbus section - left aligned */
 .secondary-text-left {
   text-align: left;
   margin-left: 0;
   margin-right: auto;
 }
-
-/* Calendar section - right aligned */
 .secondary-text-right {
   text-align: right;
   margin-left: auto;
   margin-right: 0;
 }
-
 .secondary-text .btn {
   margin-top: 24px;
 }
 
-/* Calendar - Now uses same structure as Knimbus */
-
-/* Footer */
-.site-footer { background: var(--green); color: #fff; padding: 64px 0 20px; }
-.footer-inner { display: flex; gap: 48px; align-items: flex-start; flex-wrap: wrap; }
+/* =========================
+   FOOTER
+========================= */
+.site-footer {
+  background: var(--green);
+  color: #fff;
+  padding: 64px 0 20px;
+}
+.footer-inner {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .footer-left h3 {
   font-weight: 900;
   text-transform: uppercase;
@@ -248,7 +280,12 @@ body {
   font-family: 'Indivisa Display Sans', system-ui, sans-serif;
   margin-bottom: 16px;
 }
-.footer-links { margin-left: auto; display: flex; gap: 48px; flex-wrap: wrap; }
+.footer-links {
+  margin-left: auto;
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
 .footer-links h4 {
   margin-bottom: 12px;
   font-weight: 800;
@@ -261,7 +298,9 @@ body {
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
-.footer-links a:hover { opacity: 0.8; }
+.footer-links a:hover {
+  opacity: 0.8;
+}
 .footer-bottom {
   padding: 16px 0;
   text-align: center;
@@ -270,46 +309,89 @@ body {
   margin-top: 32px;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 1024px) {
-  .hero-title { font-size: 4rem; }
-  .hero { padding: 96px 0 72px; min-height: 380px; }
-  .secondary-background { padding: 64px 0 48px; }
-  .secondary-grid { gap: 40px; }
-  .secondary-image { width: 320px; }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero {
+    padding: 96px 0 72px;
+    min-height: 380px;
+  }
+  .secondary-background {
+    padding: 64px 0 48px;
+  }
+  .secondary-grid {
+    gap: 40px;
+  }
+  .secondary-image {
+    width: 320px;
+  }
 }
-
 @media (max-width: 768px) {
-  .hero-title { font-size: 3.2rem; text-align: center; }
-  .hero { padding: 80px 0 60px; min-height: 320px; }
-  .secondary-background { padding: 56px 0 40px; }
-  .section-title { font-size: 2rem; text-align: center; }
+  .hero-title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .hero {
+    padding: 80px 0 60px;
+    min-height: 320px;
+  }
+  .secondary-background {
+    padding: 56px 0 40px;
+  }
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
   .secondary-grid {
     gap: 32px;
     align-items: center;
     justify-content: center;
   }
-  .secondary-image { width: 280px; margin: 0 auto; }
-
+  .secondary-image {
+    width: 280px;
+    margin: 0 auto;
+  }
   /* Force all text to center on tablet */
-  .secondary-text, .about-text, .secondary-text-left, .secondary-text-right {
+  .secondary-text,
+  .about-text,
+  .secondary-text-left,
+  .secondary-text-right {
     text-align: center !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 }
-
 @media (max-width: 640px) {
-  .container { padding: 0 20px; }
-  .hero { padding: 72px 0 48px; min-height: 280px; }
-  .hero-title { font-size: 2.6rem; text-align: center; }
-  .hero-sub { font-size: 1.2rem; text-align: center; }
-  .hero-inner { max-width: 100%; }
-
-
-
-  .secondary-background { padding: 56px 0 40px; }
-  .section-title { font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+  .container {
+    padding: 0 20px;
+  }
+  .hero {
+    padding: 72px 0 48px;
+    min-height: 280px;
+  }
+  .hero-title {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+  .hero-sub {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .hero-inner {
+    max-width: 100%;
+  }
+  .secondary-background {
+    padding: 56px 0 40px;
+  }
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .secondary-grid {
     flex-direction: column;
     gap: 24px;
@@ -321,7 +403,10 @@ body {
     max-width: 320px;
     margin: 0 auto;
   }
-  .secondary-text, .about-text, .secondary-text-left, .secondary-text-right {
+  .secondary-text,
+  .about-text,
+  .secondary-text-left,
+  .secondary-text-right {
     font-size: 1.05rem;
     margin-bottom: 24px;
     text-align: center !important;
@@ -329,17 +414,24 @@ body {
     margin-right: auto !important;
     max-width: 100%;
   }
-  .secondary-text .btn { margin-top: 20px; }
-
-  .calendar { padding: 64px 0 48px; text-align: center; }
-  .calendar h2 { font-size: 1.8rem; margin-bottom: 20px; text-align: center; }
+  .secondary-text .btn {
+    margin-top: 20px;
+  }
+  .calendar {
+    padding: 64px 0 48px;
+    text-align: center;
+  }
+  .calendar h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .calendar p {
     font-size: 1.05rem;
     margin-bottom: 24px;
     text-align: center;
     max-width: 100%;
   }
-
   .btn {
     width: 100%;
     max-width: 320px;
@@ -348,14 +440,39 @@ body {
     margin: 0 auto;
     display: block;
   }
-  .btn.small { padding: 14px 20px; font-size: 0.95rem; }
-
-  .site-footer { padding: 48px 0 16px; text-align: center; }
-  .footer-inner { flex-direction: column; gap: 32px; align-items: center; }
-  .footer-links { margin-left: 0; gap: 32px; }
-  .footer-left h3 { margin-bottom: 12px; text-align: center; }
-  .footer-links h4 { margin-bottom: 8px; text-align: center; }
-  .footer-links ul { text-align: center; }
-  .footer-links li { margin-bottom: 8px; }
-  .footer-bottom { margin-top: 24px; padding: 12px 0; }
+  .btn.small {
+    padding: 14px 20px;
+    font-size: 0.95rem;
+  }
+  .site-footer {
+    padding: 48px 0 16px;
+    text-align: center;
+  }
+  .footer-inner {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .footer-links {
+    margin-left: 0;
+    gap: 32px;
+  }
+  .footer-left h3 {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .footer-links h4 {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .footer-links ul {
+    text-align: center;
+  }
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  .footer-bottom {
+    margin-top: 24px;
+    padding: 12px 0;
+  }
 }
