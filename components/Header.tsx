@@ -88,9 +88,9 @@ export default function Header() {
 
             {[
               { label: "NEWS", href: "#news" },
-              { label: "FACILITIES", href: "#facilities" },
-              { label: "SERVICES", href: "#services" },
-              { label: "COLLECTIONS", href: "#collections" },
+              { label: "FACILITIES", href: "/facilities" },
+              { label: "SERVICES", href: "/services" },
+              { label: "COLLECTIONS", href: "/collections" },
             ].map((item) => (
               <Link
                 key={item.label}
@@ -107,7 +107,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#opac"
+              href="http://opac.usls.edu.ph:8080/?config=default#section=home  "
               style={{
                 backgroundColor: 'white',
                 color: '#006633',
@@ -203,9 +203,9 @@ export default function Header() {
 
             {[
               { label: "NEWS", href: "#news" },
-              { label: "FACILITIES", href: "#facilities" },
-              { label: "SERVICES", href: "#services" },
-              { label: "COLLECTIONS", href: "#collections" },
+              { label: "FACILITIES", href: "/facilities" },
+              { label: "SERVICES", href: "/services" },
+              { label: "COLLECTIONS", href: "/collections" },
             ].map((item) => (
               <Link
                 key={item.label}
@@ -223,7 +223,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="#opac"
+              href="http://opac.usls.edu.ph:8080/?config=default#section=home  "
               style={{
                 backgroundColor: 'white',
                 color: '#006633',
