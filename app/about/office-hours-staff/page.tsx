@@ -86,7 +86,7 @@ export default function OfficeHoursStaffPage() {
       <main>
         {/* Office Hours */}
         <section className="secondary-fullwidth" aria-labelledby="office-hours-title">
-          <div className="secondary-background" style={{ background: '#fff' }}>
+          <div className="secondary-background office-hours-background">
             <div className="container">
               <h2 id="office-hours-title" className="section-title">OUR OFFICE HOURS</h2>
               <div className="office-grid">
@@ -130,7 +130,7 @@ export default function OfficeHoursStaffPage() {
         </section>
 
         <section className="secondary-fullwidth" aria-labelledby="ps-title">
-          <div className="secondary-background" style={{ background: '#fff' }}>
+          <div className="secondary-background ps-background">
             <div className="container">
               <h2 id="ps-title" className="section-title">PROFESSIONAL SCHOOL PERSONNEL</h2>
               <div className="personnel-grid">

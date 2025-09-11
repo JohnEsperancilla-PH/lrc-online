@@ -18,7 +18,7 @@ export default function GuidelinesHandbookPage() {
       <main>
         {/* Guidelines */}
         <section id="guidelines" className="secondary-fullwidth" aria-labelledby="guidelines-title">
-          <div className="secondary-background" style={{ background: '#fff' }}>
+          <div className="secondary-background guidelines-background">
             <div className="container">
               <h2 id="guidelines-title" className="section-title">GUIDELINES</h2>
 

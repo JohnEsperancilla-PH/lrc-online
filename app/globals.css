@@ -555,9 +555,141 @@ header {
   color: #333;
 }
 
+.mission-background,
+.guidelines-background,
+.office-hours-background,
+.ps-background,
+.facilities-intro-background,
+.collections-intro-background,
+.services-intro-background {
+  background: #fff;
+}
+
+.facilities-intro-text,
+.collections-intro-text,
+.services-intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 /* =========================
-   FOOTER
+   SERVICE CARDS
 ========================= */
+.service-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.service-title {
+  color: #006633;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.service-buttons {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+  width: 100%;
+}
+
+.service-btn {
+  display: block;
+  width: 100%;
+  background-color: #006633;
+  color: white;
+  padding: 0.75rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.service-btn:hover {
+  background-color: #005529;
+}
+.calendar-flex-responsive {
+  align-items: center;
+  gap: 32px;
+}
+.calendar-slides-responsive {
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  padding: 0;
+  border: none;
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 0;
+  display: block;
+}
+.calendar-iframe-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.calendar-iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  min-height: 180px;
+  max-height: 400px;
+}
+
+@media (max-width: 900px) {
+  .calendar-flex-responsive {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 640px) {
+  .calendar-slides-responsive {
+    max-width: 100vw !important;
+    min-width: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
 .site-footer {
   background: var(--green);
   color: #fff;
@@ -911,5 +1043,214 @@ header {
   .footer-bottom {
     margin-top: 24px;
     padding: 12px 0;
+  }
+}
+
+/* =========================
+   ACCORDION STYLES
+========================= */
+.accordion-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.accordion-item {
+  margin-bottom: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 20px 24px;
+  background-color: #006633;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #005529;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: white;
+}
+
+.accordion-content.open {
+  max-height: 5000px;
+}
+
+/* =========================
+   FACILITY ITEM STYLES
+========================= */
+.facility-item {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 32px;
+  align-items: center;
+}
+
+.facility-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.facility-image-container {
+  width: 400px;
+  max-width: 400px;
+  height: 300px;
+  background-color: #f3f4f6;
+  border: 2px dashed #d1d5db;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.facility-image-placeholder {
+  color: #6b7280;
+  font-size: 12px;
+  text-align: center;
+  padding: 8px;
+}
+
+.facility-content {
+  flex: 1;
+  min-width: 0;
+  padding: 0 16px;
+}
+
+.facility-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #111827;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.facility-description {
+  margin: 0 0 16px 0;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: left;
+}
+
+.facility-list {
+  margin: 0 0 16px 20px;
+  color: #374151;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.facility-list li {
+  margin-bottom: 4px;
+}
+
+/* Mobile styles for accordion */
+@media (max-width: 768px) {
+  .accordion-container {
+    padding: 0 12px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 12px;
+  }
+  
+  .accordion-header {
+    padding: 16px 20px;
+    font-size: 16px;
+  }
+  
+  .accordion-content {
+    transition: max-height 0.3s ease;
+  }
+  
+  .facility-item {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+  
+  .facility-item.reverse {
+    flex-direction: column;
+  }
+  
+  .facility-image-container {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+  
+  .facility-content {
+    padding: 0;
+  }
+  
+  .facility-title {
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .facility-description {
+    text-align: justify;
+    font-size: 15px;
+  }
+  
+  .facility-list {
+    margin: 0 0 16px 16px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-container {
+    padding: 0 8px;
+  }
+  
+  .accordion-header {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+  
+  .facility-image-container {
+    height: 180px;
+  }
+  
+  .facility-title {
+    font-size: 16px;
+  }
+  
+  .facility-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .facility-list {
+    margin: 0 0 16px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .facility-image-placeholder {
+    font-size: 11px;
   }
 }

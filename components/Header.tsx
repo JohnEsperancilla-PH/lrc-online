@@ -17,7 +17,7 @@ export default function Header() {
     <header>
       <div className="header-container">
         <div className="header-flex">
-          <Link href="#" style={{ display: 'flex', alignItems: 'center', gap: '12px' }} aria-label="USLS Learning Resource Center Home">
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '12px' }} aria-label="USLS Learning Resource Center Home">
             <Image src="/logos/usls-logo.svg" width={118} height={28} alt="USLS logo" className="h-8 w-auto md:h-10 invert-[1] brightness-0" />
             <span className="sr-only">University of St. La Salle</span>
           </Link>
@@ -107,7 +107,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="http://opac.usls.edu.ph:8080/?config=default#section=home  "
+              href="http://opac.usls.edu.ph:8080/?config=default#section=home"
               style={{
                 backgroundColor: 'white',
                 color: '#006633',
@@ -223,7 +223,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="http://opac.usls.edu.ph:8080/?config=default#section=home  "
+              href="http://opac.usls.edu.ph:8080/?config=default#section=home"
               style={{
                 backgroundColor: 'white',
                 color: '#006633',

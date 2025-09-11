@@ -29,17 +29,11 @@ type ServiceCard = {
   buttons?: Button[];
 };
 
-const IconStyle = {
-  width: '48px',
-  height: '48px',
-  color: '#006633'
-};
-
 const services: ServiceCard[] = [
   {
     title: "Online Reservation",
     description: "Online reservation of facilities and equipment must be done three (3) days before the intended date of use.",
-    icon: <ReservationIcon style={IconStyle} />,
+    icon: <ReservationIcon style={{ width: '48px', height: '48px', color: '#006633' }} />,
     buttons: [
       {
         text: "LRC Reservation Form",
@@ -54,7 +48,7 @@ const services: ServiceCard[] = [
   {
     title: "Bibliographic Service",
     description: "Search the Online Public Access Catalog (OPAC). Please ask the librarian for assistance in finding the book.",
-    icon: <BookIcon style={IconStyle} />,
+    icon: <BookIcon style={{ width: '48px', height: '48px', color: '#006633' }} />,
     buttons: [
       {
         text: "Access OPAC Here",
@@ -65,7 +59,7 @@ const services: ServiceCard[] = [
   {
     title: "Online Renewal",
     description: "To renew your borrowed library resources or to register for an account.",
-    icon: <RenewalIcon style={IconStyle} />,
+    icon: <RenewalIcon style={{ width: '48px', height: '48px', color: '#006633' }} />,
     buttons: [
       {
         text: "Access Online Renewal",
@@ -76,36 +70,36 @@ const services: ServiceCard[] = [
   {
     title: "Book Circulation",
     description: "Borrowing and returning of library resources.",
-    icon: <CirculationIcon style={IconStyle} />
+    icon: <CirculationIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   },
   {
     title: "Information Literacy",
     description: "The library provides literacy needs of the academic community through online tutorials, research workshops, and assistance searching for information, database searching and sourcing.",
-    icon: <LiteracyIcon style={IconStyle} />
+    icon: <LiteracyIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   },
   {
     title: "Information Delivery",
     description: "Delivery of library resources; both online or physical. Book request will be delivered as a photocopy or scan and can be picked up at the library.",
-    icon: <DeliveryIcon style={IconStyle} />
+    icon: <DeliveryIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   },
   {
     title: "Reference & Information",
     description: "The library provides assistance to library users in searching for the resources they for their research and academic needs.",
-    icon: <ReferenceIcon style={IconStyle} />
+    icon: <ReferenceIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   },
   {
     title: "Printing",
     description: "The library facilitates printing of researches done by users with a fee depending on the kind of research to be printed.",
-    icon: <PrintingIcon style={IconStyle} />
+    icon: <PrintingIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   },
   {
     title: "Visiting Researchers",
     description: "Students from other schools, alumni, professional and corporate researchers.",
-    icon: <ResearcherIcon style={IconStyle} />
+    icon: <ResearcherIcon style={{ width: '48px', height: '48px', color: '#006633' }} />
   }
 ];
 
-export default function FacilitiesPage() {
+export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
@@ -117,10 +111,10 @@ export default function FacilitiesPage() {
         {/* Main Content */}
         <main>
         {/* Introduction Section */}
-        <section className="secondary-fullwidth" aria-labelledby="facilities-intro">
-          <div className="secondary-background" style={{ background: '#fff' }}>
+        <section className="secondary-fullwidth" aria-labelledby="services-intro">
+          <div className="secondary-background services-intro-background">
             <div className="container">
-              <div className="secondary-text about-text" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
+              <div className="secondary-text about-text services-intro-text">
                 <p>
                     The USLS Library offers a variety of services to support students and faculty. These include book borrowing and returning, reference assistance, access to multimedia resources, and online catalog search. It also provides specialized help through LORA, a virtual assistant, and offers online reservation for discussion rooms and other facilities.
                 </p>
@@ -136,76 +130,24 @@ export default function FacilitiesPage() {
               <h2 id="services-grid-title" className="section-title">OUR SERVICES</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
                 {services.map((service) => (
-                  <div key={service.title} style={{
-                    backgroundColor: 'white',
-                    borderRadius: '8px',
-                    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                    overflow: 'hidden',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    height: '100%'
-                  }}>
-                    <div className="service-icon" style={{ 
-                      display: 'flex',
-                      justifyContent: 'center',
-                      alignItems: 'center',
-                      padding: '2rem 0',
-                      backgroundColor: '#f8f9fa',
-                      borderRadius: '8px 8px 0 0'
-                    }}>
+                  <div key={service.title} className="service-card">
+                    <div className="service-icon">
                       {service.icon}
                     </div>
-                    <div style={{
-                      padding: '1.5rem',
-                      display: 'flex',
-                      flexDirection: 'column',
-                      flexGrow: 1
-                    }}>
-                      <h3 style={{ 
-                        color: '#006633', 
-                        fontSize: '1.25rem', 
-                        fontWeight: 'bold',
-                        marginBottom: '1rem',
-                        textAlign: 'center'
-                      }}>
+                    <div className="service-content">
+                      <h3 className="service-title">
                         {service.title}
                       </h3>
-                      <p style={{ 
-                        fontSize: '0.9rem', 
-                        lineHeight: '1.5', 
-                        color: '#333',
-                        marginBottom: '1.5rem',
-                        textAlign: 'center',
-                        flexGrow: 1
-                      }}>
+                      <p className="service-description">
                         {service.description}
                       </p>
                       {service.buttons && service.buttons.length > 0 && (
-                        <div style={{ 
-                          textAlign: 'center',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          gap: '0.5rem',
-                          marginTop: 'auto',
-                          width: '100%'
-                        }}>
+                        <div className="service-buttons">
                           {service.buttons.map((button, idx) => (
-                            <a 
+                            <a
                               key={idx}
                               href={button.link}
-                              className="service-btn hover:bg-green-700"
-                              style={{
-                                display: 'block',
-                                width: '100%',
-                                backgroundColor: '#006633',
-                                color: 'white',
-                                padding: '0.75rem',
-                                borderRadius: '4px',
-                                textDecoration: 'none',
-                                fontSize: '0.875rem',
-                                fontWeight: '500',
-                                transition: 'all 0.2s ease'
-                              }}
+                              className="service-btn"
                             >
                               {button.text}
                             </a>

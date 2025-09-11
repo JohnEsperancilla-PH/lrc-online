@@ -135,7 +135,7 @@ export default function LearnMoreAboutUsPage() {
 
         {/* Mission Section */}
         <section className="secondary-fullwidth" aria-labelledby="mission-title" id="mission">
-          <div className="secondary-background" style={{ background: '#fff' }}>
+          <div className="secondary-background mission-background">
             <div className="container">
               <h2 id="mission-title" className="section-title">MISSION</h2>
               <div className="secondary-text about-text">
