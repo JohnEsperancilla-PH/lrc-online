@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Knimbus() {
   return (
     <section className="secondary-fullwidth" aria-labelledby="knimbus-title">
@@ -5,9 +7,11 @@ export default function Knimbus() {
         <div className="container">
           <h2 id="knimbus-title" className="section-title">ABOUT KNIMBUS</h2>
           <div className="secondary-grid">
-            <img
+            <Image
               src="/images/knimbus.png"
               alt="Screenshot of the Knimbus digital library interface"
+              width={480}
+              height={320}
               className="secondary-image"
             />
             <div className="secondary-text secondary-text-left">

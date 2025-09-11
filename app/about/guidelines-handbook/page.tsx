@@ -25,7 +25,7 @@ export default function GuidelinesHandbookPage() {
               <div className="policy-section">
                 <h3>LEARNING RESOURCE CENTER GENERAL POLICY</h3>
                 <p className="policy-intro">
-                  The Learning Resource Center (LRC) serves as the academic institution's "brain" and is vital to
+                  The Learning Resource Center (LRC) serves as the academic institution&apos;s &ldquo;brain&rdquo; and is vital to
                   advancing knowledge and achieving educational objectives. Its efficient operation ensures that users are
                   satisfied. The following guidelines must be followed:
                 </p>
@@ -54,8 +54,8 @@ export default function GuidelinesHandbookPage() {
                     pay the full replacement cost of the resource.
                   </li>
                   <li>
-                    FORGERY: A student's library privileges will be suspended during the following academic term if they
-                    have falsified the librarian's signature to settle library bills. Additionally, the offending party will be
+                    FORGERY: A student&apos;s library privileges will be suspended during the following academic term if they
+                    have falsified the librarian&apos;s signature to settle library bills. Additionally, the offending party will be
                     reported to the Disciplinary Board.
                   </li>
                   <li>
@@ -81,7 +81,7 @@ export default function GuidelinesHandbookPage() {
                 <h3>BORROWING PRIVILEGES</h3>
                 <ul className="policy-list">
                   <li>
-                    Faculty - A bona fide faculty is allowed to borrow 15 books at a time for one (1) month and maybe
+                    Faculty - A bona fide faculty member is allowed to borrow 15 books at a time for one (1) month and can be
                     renewed for another month unless called for by another user.
                   </li>
                   <li>
@@ -99,7 +99,7 @@ export default function GuidelinesHandbookPage() {
 
                 <p className="policy-note">NOTE:</p>
                 <p className="policy-intro">
-                  Any violation of the library policy forfeits one's privilege/s in the use of library resources. Loaning out of
+                  Any violation of the library policy forfeits one&apos;s privilege/s in the use of library resources. Loaning out of
                   books or other library materials is subject for approval of the LRC Head.
                 </p>
               </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="site-footer" role="contentinfo">
@@ -9,10 +11,10 @@ export default function Footer() {
           <div>
             <h4>QUICK LINKS</h4>
             <ul>
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/about" className="hover:underline">About</a></li>
-              <li><a href="#news" className="hover:underline">News</a></li>
-              <li><a href="#facilities" className="hover:underline">Facilities</a></li>
+              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/about" className="hover:underline">About</Link></li>
+              <li><Link href="/news" className="hover:underline">News</Link></li>
+              <li><Link href="/facilities" className="hover:underline">Facilities</Link></li>
             </ul>
           </div>
           <div>

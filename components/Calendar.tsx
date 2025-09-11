@@ -13,7 +13,7 @@ export default function Calendar() {
               style={{width: '100%', maxWidth: 600, margin: '0 auto', flex: 1}}
             >
               <p>
-                Check library schedules, including operating hours and events, and conveniently reserve facilities, equipment, or study spaces. Designed to help you plan ahead and make the most of the library's resources for your academic and research needs.
+                Check library schedules, including operating hours and events, and conveniently reserve facilities, equipment, or study spaces. Designed to help you plan ahead and make the most of the library&apos;s resources for your academic and research needs.
               </p>
               <a className="btn small" href="https://docs.google.com/forms/d/e/1FAIpQLSckaJPQkGKNptZJ584FywgXcvY-JLIUTNeeLU0kehmM-KLmLw/viewform?usp=sf_link" aria-label="Reserve here">RESERVE HERE</a>
             </div>

@@ -76,7 +76,7 @@ export default function LearnMoreAboutUsPage() {
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3>1998</h3>
-                      <p>Extension programs began, and with ICEN, the library enabled direct electronic access to student records from the Registrar's Office.</p>
+                      <p>Extension programs began, and with ICEN, the library enabled direct electronic access to student records from the Registrar&apos;s Office.</p>
                     </div>
                   </div>
                   
@@ -108,7 +108,7 @@ export default function LearnMoreAboutUsPage() {
                     <div className="timeline-marker"></div>
                     <div className="timeline-content">
                       <h3>2012</h3>
-                      <p>The Lasalliana University Archives were inaugurated to preserve the university's historical records.</p>
+                      <p>The Lasalliana University Archives were inaugurated to preserve the university&apos;s historical records.</p>
                     </div>
                   </div>
                   

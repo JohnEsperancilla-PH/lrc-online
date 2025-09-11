@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Office Hours & Staff - Learning Resource Center | University of St. La Salle",
@@ -92,7 +93,7 @@ export default function OfficeHoursStaffPage() {
               <div className="office-grid">
                 {offices.map((o) => (
                   <div key={o.title} className="office-card">
-                    <img src={o.image} alt="library thumbnail" className="office-image" />
+                    <Image src={o.image} alt={`${o.title} thumbnail`} width={400} height={200} className="office-image" />
                     <div className="office-body">
                       <h3>{o.title}</h3>
                       <ul className="office-hours">

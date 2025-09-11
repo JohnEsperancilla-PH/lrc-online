@@ -476,7 +476,7 @@ const collections: Collection[] = [
               lineHeight: '1.6',
               color: '#4b5563'
             }}>
-              One of the world's most extensive multidisciplinary collections of online resources covering life, health, social and physical sciences, and humanities. Features journals, books, and reference works.
+              One of the world&apos;s most extensive multidisciplinary collections of online resources covering life, health, social and physical sciences, and humanities. Features journals, books, and reference works.
             </p>
             <a
               href="https://lib.usls.edu.ph/portal/v2/default/login"
@@ -552,7 +552,7 @@ const collections: Collection[] = [
               lineHeight: '1.6',
               color: '#4b5563'
             }}>
-              Premier platform for peer-reviewed scholarly literature, offering access to scientific, technical, and medical research. Features journals, books, and reference works from Elsevier's extensive collection.
+              Premier platform for peer-reviewed scholarly literature, offering access to scientific, technical, and medical research. Features journals, books, and reference works from Elsevier&apos;s extensive collection.
             </p>
             <a
               href="https://lib.usls.edu.ph/portal/v2/default/login"
@@ -657,7 +657,7 @@ const collections: Collection[] = [
                 color: '#4b5563',
                 marginBottom: '1rem'
               }}>
-                ELibraryUSA can be accessed only at the American corner. To have your eLibraryUSA Personal Account please see us at the LRC office for more information. The American Corner is located on the Ground floor of the HEU Learning Resource Center.
+                ELibraryUSA can be accessed only at the American corner.               To have your eLibraryUSA Personal Account please see us at the LRC office for more information. The American Corner is located on the Ground floor of the HEU Learning Resource Center.
               </p>
               <p style={{
                 fontSize: '0.95rem',
