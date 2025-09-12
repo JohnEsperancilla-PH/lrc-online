@@ -64,11 +64,13 @@ const SpecialCollectionItem = ({
   const titleStyle = {
     marginTop: '0',
     marginBottom: '8px',
-    color: '#111827',
-    fontSize: isMobile ? (isSmallMobile ? '16px' : '18px') : '16px',
-    fontWeight: 'bold',
+    color: '#006633',
+    fontSize: '1.3rem',
+    fontWeight: '700',
     lineHeight: '1.3',
     textAlign: isMobile ? 'center' as const : 'left' as const,
+    borderBottom: '2px solid #006633',
+    paddingBottom: '0.5rem'
   };
 
   const paragraphStyle = {
@@ -178,27 +180,385 @@ const collections: Collection[] = [
   {
     id: 'thesis-dissertation',
     title: 'THESIS & DISSERTATION',
-    content: 'The Reference Collection includes non-circulating materials that provide quick access to information. These materials are for in-library use only.',
-    items: [
-      'Encyclopedias',
-      'Dictionaries',
-      'Handbooks',
-      'Almanacs',
-      'Atlases',
-      'Directories',
-      'Yearbooks'
-    ]
+    content: (
+      <div>
+        <p style={{ marginBottom: '2rem', fontSize: '1rem', lineHeight: '1.6' }}>
+          Access our comprehensive collection of undergraduate and graduate theses, dissertations, and research papers from various academic programs at the University of St. La Salle.
+        </p>
+
+        {/* Undergraduate Section */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{
+            fontSize: '1.3rem',
+            fontWeight: '700',
+            color: '#006633',
+            marginBottom: '1rem',
+            borderBottom: '2px solid #006633',
+            paddingBottom: '0.5rem'
+          }}>
+            Undergraduate Programs
+          </h3>
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=513655756#gid=513655756" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Accounting
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=1169297" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Accounting Technology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1637905600#gid=1637905600" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Agribusiness
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=1659101926" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Biology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1061220599#gid=1061220599" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Chemical Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=850759766#gid=850759766" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Computer Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=106582942#gid=106582942" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Computer Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=56602722#gid=56602722" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Electronic Communication Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=1092957455" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Economics
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1486721506#gid=1486721506" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1010400559#gid=1010400559" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Electrical Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1724598305#gid=1724598305" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Entrepreneurship
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1343821286#gid=1343821286" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Finance
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=578729399#gid=578729399" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Food Technology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=438193740" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Hospitality Management (FS)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1357872221#gid=1357872221" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Hospitality Management (T)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1799610607#gid=1799610607" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Interdisciplinary Studies
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1526863526#gid=1526863526" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Information Technology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=2003414995#gid=2003414995" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • LIACOM
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1586264708#gid=1586264708" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Management Accounting
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=362309357#gid=362309357" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Mass Communication
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1496238091#gid=1496238091" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Materials Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1383552989#gid=1383552989" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Marketing
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=1811981994" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Nursing
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit#gid=1288372434" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Operations Management (FS)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=2138837785#gid=2138837785" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Operations Management (T)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=2106052885#gid=2106052885" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Political Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1XjK9jWZo90VT0h87ANRXtv0hgPoZKTtt/edit?gid=1033403691#gid=1033403691" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Psychology
+            </a>
+          </div>
+        </div>
+
+        {/* Graduate Section */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{
+            fontSize: '1.3rem',
+            fontWeight: '700',
+            color: '#006633',
+            marginBottom: '1rem',
+            borderBottom: '2px solid #006633',
+            paddingBottom: '0.5rem'
+          }}>
+            Graduate Programs
+          </h3>
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1652165966#gid=1652165966" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Business Administration - PP
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1556662772#gid=1556662772" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Business Administration - T
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1805193453#gid=1805193453" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Business Administration - Human Resource Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=187219272#gid=187219272" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Science in Hotel & Restaurant Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=182300704#gid=182300704" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Educational Leadership
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=878480500#gid=878480500" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - English
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1271210399#gid=1271210399" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - English Language
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=44081702#gid=44081702" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Marriage & Family
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1649721836#gid=1649721836" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Social Studies
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=149653329#gid=149653329" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Physical Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=788693897#gid=788693897" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Arts in Teaching - General Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1321904057#gid=1321904057" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Mathematics
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=195768359#gid=195768359" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Reading, Language & Literature
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=1689132796#gid=1689132796" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Chemistry
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1764320064#gid=1764320064" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Early Childhood Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=1520299368#gid=1520299368" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Education - Filipino
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1737182362#gid=1737182362" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Education - Natural Sciences
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=2056080139#gid=2056080139" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Arts in Education - Special Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1070976685#gid=1070976685" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Education - Youth Ministry
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=194714674#gid=194714674" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Educational Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1223541887#gid=1223541887" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Arts in Psychology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=422321408#gid=422321408" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Arts in Guidance & Counseling
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=310690460#gid=310690460" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Environmental Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=1116369841#gid=1116369841" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Engineering - Electronics & Communications Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=1903449216#gid=1903449216" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Engineering - Electrical Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=642687628#gid=642687628" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Environmental Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=2102999701#gid=2102999701" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Information Technology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=191340699#gid=191340699" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Arts - Conflict & Reconciliation Studies
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=347109241#gid=347109241" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Public Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1fZQllTIFwNrgsRl5V7NV5UbspL64py3a/edit?gid=799163276#gid=799163276" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master in Nursing
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=2055918684#gid=2055918684" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Science in Architecture
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=200452251#gid=200452251" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Science in Teaching Computer Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Ii6WLmfZSMQPhpIF0tSiakfD1swEM8lq/edit?gid=751998567#gid=751998567" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Master of Library Science
+            </a>
+          </div>
+        </div>
+
+        {/* Medicine Section */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{
+            fontSize: '1.3rem',
+            fontWeight: '700',
+            color: '#006633',
+            marginBottom: '1rem',
+            borderBottom: '2px solid #006633',
+            paddingBottom: '0.5rem'
+          }}>
+            Medicine
+          </h3>
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <a href="https://docs.google.com/spreadsheets/d/1XrWlAjYSxeAhn4wNTUdNNutyeHGEcl97/edit?gid=2065174322#gid=2065174322" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • College of Medicine
+            </a>
+          </div>
+        </div>
+
+        {/* Law Section */}
+        <div style={{ marginBottom: '2rem' }}>
+          <h3 style={{
+            fontSize: '1.3rem',
+            fontWeight: '700',
+            color: '#006633',
+            marginBottom: '1rem',
+            borderBottom: '2px solid #006633',
+            paddingBottom: '0.5rem'
+          }}>
+            Law
+          </h3>
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <a href="https://docs.google.com/spreadsheets/d/1yAqDdbDggmWVWbCH_FUEzXCYAtE1ftam/edit?gid=1887009511#gid=1887009511" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • SCRA vols. 1 to 965
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1yAqDdbDggmWVWbCH_FUEzXCYAtE1ftam/edit?gid=1177751954#gid=1177751954" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • List of Philippine Reports
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1yAqDdbDggmWVWbCH_FUEzXCYAtE1ftam/edit?gid=681704835#gid=681704835" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • List of Philippine Reports Annotated
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1yAqDdbDggmWVWbCH_FUEzXCYAtE1ftam/edit?gid=554846316#gid=554846316" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • List of CODAL
+            </a>
+          </div>
+        </div>
+
+        {/* Dissertation Section */}
+        <div style={{ marginBottom: '1rem' }}>
+          <h3 style={{
+            fontSize: '1.3rem',
+            fontWeight: '700',
+            color: '#006633',
+            marginBottom: '1rem',
+            borderBottom: '2px solid #006633',
+            paddingBottom: '0.5rem'
+          }}>
+            Doctoral Dissertations
+          </h3>
+          <div style={{ display: 'grid', gap: '0.5rem' }}>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1055895750#gid=1055895750" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Nursing
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=971950397#gid=971950397" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=39638707#gid=39638707" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy Major in Educational Leadership
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=266395215#gid=266395215" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doc of Education Major in Educational Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1707328788#gid=1707328788" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1589904363#gid=1589904363" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Applied Linguistics
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1641340298#gid=1641340298" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Business Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=872352693#gid=872352693" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Development Studies
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1653606309#gid=1653606309" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Mathematics Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1074677373#gid=1074677373" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Religious Studies
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=459167589#gid=459167589" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Major Education in Religious Education and Values
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1565230253#gid=1565230253" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Development Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1289172196#gid=1289172196" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Communication
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=622073636#gid=622073636" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in History
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=925134302#gid=925134302" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Technology Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=55004334#gid=55004334" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Rural Development
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=797260881#gid=797260881" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Science Education
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=587564084#gid=587564084" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy Major in Psychology
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1931930630#gid=1931930630" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor in Management Major in Human Resource Management
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1472171700#gid=1472171700" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Environmental Engineering
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1980393538#gid=1980393538" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor in Public Administration
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=614972432#gid=614972432" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Environmental Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=345545645#gid=345545645" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Education (Curriculum Development)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=236030421#gid=236030421" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Education (Physical Education)
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1182543235#gid=1182543235" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in English
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1642237977#gid=1642237977" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy in Science
+            </a>
+            <a href="https://docs.google.com/spreadsheets/d/1Nu-b0bMk5pdP4hgi4uTmFtOVdPl6f0J0/edit?gid=1878377985#gid=1878377985" target="_blank" rel="noopener noreferrer" style={{ color: '#006633', textDecoration: 'none', fontSize: '0.95rem', lineHeight: '1.5' }}>
+              • Doctor of Philosophy (Social Science)
+            </a>
+          </div>
+        </div>
+      </div>
+    ),
   },
   {
     id: 'online-resources',
     title: 'ONLINE RESOURCES',
     content: (
       <div>
-        <h3 style={{ 
-          fontSize: '1.2rem', 
-          fontWeight: '600', 
-          color: '#006633', 
-          marginBottom: '1.5rem',
+        <h3 style={{
+          fontSize: '1.3rem',
+          fontWeight: '700',
+          color: '#006633',
+          marginBottom: '1rem',
+          borderBottom: '2px solid #006633',
+          paddingBottom: '0.5rem',
           textAlign: 'center'
         }}>
           General Online Resources
@@ -585,11 +945,13 @@ const collections: Collection[] = [
           </div>
         </div>
 
-        <h3 style={{ 
-          fontSize: '1.2rem', 
-          fontWeight: '600', 
-          color: '#006633', 
-          margin: '3rem 0 1.5rem',
+        <h3 style={{
+          fontSize: '1.3rem',
+          fontWeight: '700',
+          color: '#006633',
+          margin: '3rem 0 1rem',
+          borderBottom: '2px solid #006633',
+          paddingBottom: '0.5rem',
           textAlign: 'center'
         }}>
           eLibraryUSA
@@ -671,11 +1033,13 @@ const collections: Collection[] = [
           </div>
         </div>
 
-        <h3 style={{ 
-          fontSize: '1.2rem', 
-          fontWeight: '600', 
-          color: '#006633', 
-          margin: '3rem 0 1.5rem',
+        <h3 style={{
+          fontSize: '1.3rem',
+          fontWeight: '700',
+          color: '#006633',
+          margin: '3rem 0 1rem',
+          borderBottom: '2px solid #006633',
+          paddingBottom: '0.5rem',
           textAlign: 'center'
         }}>
           Philippine E-Journals

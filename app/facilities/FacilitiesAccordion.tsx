@@ -74,11 +74,13 @@ const FacilityItem = ({
   const titleStyle = {
     marginTop: '0',
     marginBottom: '8px',
-    color: '#111827',
-    fontSize: isMobile ? (isSmallMobile ? '16px' : '18px') : '16px',
-    fontWeight: 'bold',
+    color: '#006633',
+    fontSize: '1.3rem',
+    fontWeight: '700',
     lineHeight: '1.3',
     textAlign: isMobile ? 'center' as const : 'left' as const,
+    borderBottom: '2px solid #006633',
+    paddingBottom: '0.5rem'
   };
 
   const paragraphStyle = {

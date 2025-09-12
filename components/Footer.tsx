@@ -20,17 +20,17 @@ export default function Footer() {
           <div>
             <h4>Other</h4>
             <ul>
-              <li><a href="#opac" className="hover:underline">OPAC</a></li>
-              <li><a href="#services" className="hover:underline">Services</a></li>
-              <li><a href="#collections" className="hover:underline">Collections</a></li>
+              <li><a href="http://opac.usls.edu.ph:8080/?config=default#section=home" className="hover:underline">OPAC</a></li>
+              <li><a href="/services" className="hover:underline">Services</a></li>
+              <li><a href="/collections" className="hover:underline">Collections</a></li>
             </ul>
           </div>
           <div>
             <h4>Schools</h4>
             <ul>
-              <li><a href="#" className="hover:underline">Law School</a></li>
-              <li><a href="#" className="hover:underline">Medical School</a></li>
-              <li><a href="#" className="hover:underline">Graduate School</a></li>
+              <li><Link href="/professional-libraries#law-library" className="hover:underline">Law School</Link></li>
+              <li><Link href="/professional-libraries#medical-library" className="hover:underline">Medical School</Link></li>
+              <li><Link href="/professional-libraries#graduate-library" className="hover:underline">Graduate School</Link></li>
             </ul>
           </div>
           <div>
