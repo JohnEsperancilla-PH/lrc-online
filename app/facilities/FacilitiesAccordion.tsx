@@ -207,7 +207,7 @@ export default function FacilitiesAccordion() {
     {
       title: "Circulation and Information and Readers Services Section",
       description: "The circulation is one of the key sections in the Learning Resource Center. It provides check-outs and check ins, re-shelving of library borrowed materials, assist users in their needs and answer general queries. A drop box is provided at the entrance of the library for borrowers who wish to return the books they borrowed on or before the due date and even if the library has no service. This is regularly checked by the librarian. The Information and Readers Services Section provides information reference services to users like assisting retrieval of library resources, online searches, and marketing library services and programs. The reserve section is where books on demand with limited copies are placed. Faculty members can also place personal books reserved for room use only.",
-      imageSrc: "/images/circulation-desk.jpg", // Add your image path here
+      imageSrc: "/images/circulation-information.jpg", // Add your image path here
       imageAlt: "Circulation desk with library staff assisting students"
     },
     {
@@ -219,7 +219,7 @@ export default function FacilitiesAccordion() {
     {
       title: "Business & Accountancy & General Reference Section",
       description: "The Business and accountancy house all books on accounting, economics, entrepreneurship, agribusiness, marketing, management and hospitality management. The general reference section houses general reference books which provide quick and easy information. These library resources are for room use only. This section includes the following books:",
-      imageSrc: "/images/business-reference.jpg", // Add your image path here
+      imageSrc: "/images/business-accountancy.jpg", // Add your image path here
       imageAlt: "Business and reference section with textbooks and reference materials",
       hasList: true,
       listItems: [
@@ -241,7 +241,46 @@ export default function FacilitiesAccordion() {
     {
       title: "Engineering and Information Technology, Social Sciences, Education & Nursing Section",
       description: "This section house books on Engineering and Information technology, nursing, social sciences, humanities, psychology, religious studies, philosophy, education, political science, communications, arts, physical education, literature and history. Books for leisure reading is also located in this section.",
-      imageSrc: "/images/engineering-section.jpg", // Add your image path here
+      imageSrc: "/images/engineering-information.jpg", // Add your image path here
+      imageAlt: "Engineering and IT section with technical books and resources"
+    }
+  ];
+
+  const thirdFloorFacilities = [
+    {
+      title: "Discussion Rooms",
+      description: "The discussion rooms are designed to facilitate group study and collaboration among students. Equipped with modern technology and comfortable seating, these rooms provide an ideal environment for brainstorming sessions, group projects, and interactive learning experiences.",
+      imageSrc: "/images/discussion-rooms.jpg", // Add your image path here
+      imageAlt: "Discussion room with students collaborating on a project"
+    },
+    {
+      title: "Don Carlos Locsin Collection",
+      description: "The Don Carlos Locsin Collection includes 3,000 volumes of books on various subject areas like Philippine history, literature, politics, government, and more. It also includes rare materials that date back to the early 1900s. It has precious and informative collection on the sugar industry, its history, and its development. Various periodicals are an outstanding part of this collection.",
+      imageSrc: "/images/don-carlos.jpg", // Add your image path here
+      imageAlt: "KRC collection with BSP publications and research materials"
+    },
+    {
+      title: "Negrosiana Section",
+      description: "The Negrosiana collection is about the local history of the Province of Negros. It consists of books, publications, brochures, and other materials about Negros Occidental and Negros Oriental. Exemplary research works written by local writers are housed in this section.",
+      imageSrc: "", // Add your image path here
+      imageAlt: "Business and reference section with textbooks and reference materials"
+    },
+    {
+      title: "Filipiniana Section",
+      description: "The Filipinana section consists of books and other resources about the Philippines, books written by Filipino authors, and books printed in the Philippines. These materials are for room use only.  This a close shelf section. In special cases, a student can borrow a book for classroom use only upon the request of the faculty.  A written note from the concerned faculty is required before approval by the LRC Head.",
+      imageSrc: "", // Add your image path here
+      imageAlt: "Asian studies collection with artifacts and historical materials"
+    },
+    {
+      title: "Open Study Area",
+      description: "Open study area is a space where students can discuss, engage and network  among their classmates to do their academic research, homework, assignments and study. ",
+      imageSrc: "", // Add your image path here
+      imageAlt: "Engineering and IT section with technical books and resources"
+    },
+    {
+      title: "Individual Study Area",
+      description: "Individual study area is a quite  space where students can sharpen their mind, can  concentrate and do their academic research, homework, assignments and study.  ",
+      imageSrc: "", // Add your image path here
       imageAlt: "Engineering and IT section with technical books and resources"
     }
   ];
@@ -288,7 +327,20 @@ export default function FacilitiesAccordion() {
     {
       id: "third-floor",
       title: "THIRD FLOOR", 
-      content: "Content for third floor facilities will be added here."
+      content: (
+        <div>
+          {thirdFloorFacilities.map((facility, index) => (
+            <FacilityItem
+              key={index}
+              title={facility.title}
+              description={facility.description}
+              imageSrc={facility.imageSrc}
+              imageAlt={facility.imageAlt}
+              index={index}
+            />
+          ))}
+        </div>
+      )
     }
   ];
 
